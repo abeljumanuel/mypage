@@ -31,3 +31,14 @@ aside{
     margin-right: 10px;
     max-height: 140px;
 }
+iframe{
+    text-align: left;
+    min-width: 390px;
+    min-height: 300px;
+    margin-left: auto;
+}
+
+center{
+    text-align: center;
+    margin: auto;
+}
