@@ -11,6 +11,7 @@ main{
 
 ol{
     display: flex;
+    flex-wrap:nowrap;
     flex-direction: row;
     align-items: center;
 }
@@ -45,7 +46,7 @@ iframe{
 }
 
 .responsive{
-    flex-grow: 2;
+    flex-grow: 1;
     margin-top: 0px;
     margin-left: 0px;
     width: auto;
@@ -53,9 +54,13 @@ iframe{
 }
 
 .tab{
-    flex-grow: 1;
+    flex-grow: 2;
 }
 
 .social{
-    flex-grow: 2;
+    flex-wrap: wrap;
+    flex-grow: 0;
+    float: right;
+    margin-left: 5px;
+    width: 70px;
 }
