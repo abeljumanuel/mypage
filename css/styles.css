@@ -9,17 +9,9 @@ main{
     flex: auto;
 }
 
-.share{
-    display: flex;
-    flex-direction: row;
-    text-align: right;
-    max-height: 20px;
-    max-width: 100px;
-}
-
 ul{
     display: flex;
-    flex-wrap:nowrap;
+    flex-wrap:wrap;
     flex-direction: row;
     align-items: center;
 }
@@ -53,18 +45,35 @@ iframe{
     margin-left: auto;
 }
 
+
+header{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+}
+
+.menu{
+    flex-grow: 3;
+    flex-wrap: nowrap;
+}
+
 .responsive img{
-    flex-grow: 0;
+    flex-grow: 2;
     margin-top: 0px;
     margin-left: 0px;
-    width: auto;
-    max-height: 150px;
+    width: 200px;
+    height: auto;
+}
+
+.tab{
+    flex-grow: 1;
 }
 
 .tab a{
-    flex-grow: 0;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
+    flex-grow: 1;
 }
 
 .tab a:hover{
@@ -72,15 +81,28 @@ iframe{
     font-weight: bolder;
 }
 
-
 .social{
     flex-wrap: wrap;
-    flex-grow: 24;
+    flex-grow: 3;
     float: right;
-    margin-left: 5px;
-    width: 70px;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20px;
 }
 
-header{
-    height: 150px;
+.share{
+    flex-grow: 1;
+    flex-wrap: nowrap;
+    max-height: 20px;
+}
+
+.share ul{
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.share li{
+    flex-grow: 1;
+    max-height: 10px;
+    max-width: 100px;
 }
