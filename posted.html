@@ -4,6 +4,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:url"           content="http://54.226.231.209/index.html" />
+	<meta property="og:type"          content="website" />
+	<meta property="og:title"         content="Juan Manuel Rojas Gonzalez" />
+	<meta property="og:description"   content="Something about Juan Manuel Rojas Gonzalez" />
+	<meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
 	<script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
 	<link href="https://apply.holbertonschool.com/level2/school.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
@@ -12,7 +17,19 @@
 </head>
 <body class="works_on_smartphone">
 	<header>
-		<ol>
+		<!-- Load Facebook SDK for JavaScript -->
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
+		<!-- Your share button code -->
+		
+		<ul>
 			<li class="responsive">
 				<a href="index.html">
 					<img src="img/JuanLogo.gif" alt="logo Juan Manuel" width="150vm">
@@ -25,7 +42,11 @@
 				<a href="https://www.linkedin.com/in/juan-manuel-rojas-gonzalez-b6857a90/"><span class="iconify" data-icon="logos:linkedin-icon"></span></a>
 				<a href="https://www.instagram.com/abeljuanmanuel/"><span class="iconify" data-icon="logos:instagram-icon"></span></a>
 			</li>
-		</ol>
+		</ul>
+		<div class="fb-share-button" style="float: right;" 
+		data-href="http://54.226.231.209/index.html" 
+		data-layout="button_count">
+		</div>
 	</header>
 	<main>
 		<article>

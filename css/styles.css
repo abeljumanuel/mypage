@@ -9,7 +9,15 @@ main{
     flex: auto;
 }
 
-ol{
+.share{
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+    max-height: 20px;
+    max-width: 100px;
+}
+
+ul{
     display: flex;
     flex-wrap:nowrap;
     flex-direction: row;
@@ -45,22 +53,34 @@ iframe{
     margin-left: auto;
 }
 
-.responsive{
-    flex-grow: 1;
+.responsive img{
+    flex-grow: 0;
     margin-top: 0px;
     margin-left: 0px;
     width: auto;
-    max-height: 100%;
+    max-height: 150px;
 }
 
-.tab{
-    flex-grow: 2;
+.tab a{
+    flex-grow: 0;
+    padding: 10px;
+    text-align: center;
 }
+
+.tab a:hover{
+    color: #F80002;
+    font-weight: bolder;
+}
+
 
 .social{
     flex-wrap: wrap;
-    flex-grow: 0;
+    flex-grow: 24;
     float: right;
     margin-left: 5px;
     width: 70px;
+}
+
+header{
+    height: 150px;
 }
